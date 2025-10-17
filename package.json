@@ -1,0 +1,31 @@
+{
+  "name": "evolution-saas-platform",
+  "version": "1.0.0",
+  "description": "Evolution API SaaS Platform - Complete WhatsApp Integration Solution",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "plugins/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "backend:dev": "npm run dev -w apps/backend",
+    "frontend:dev": "npm run dev -w apps/frontend",
+    "backend:build": "npm run build -w apps/backend",
+    "frontend:build": "npm run build -w apps/frontend"
+  },
+  "keywords": [
+    "evolution",
+    "whatsapp",
+    "saas",
+    "integration",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "Apache-2.0"
+}
